@@ -1,21 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.45cda94d.css",
-    "main.js": "/Portfolio/static/js/main.179ae914.js",
-    "static/media/tactica.png": "/Portfolio/static/media/tactica.1c76badc27269d3fac6c.png",
-    "static/media/drontec.png": "/Portfolio/static/media/drontec.15d8b663c7d0b809529c.png",
-    "static/media/cfl.png": "/Portfolio/static/media/cfl.abae02eb894ffe4647fd.png",
-    "static/media/andres-website.png": "/Portfolio/static/media/andres-website.68f2dfbabb914c6b024d.png",
-    "static/media/creotec.png": "/Portfolio/static/media/creotec.f8e186b8ca5f94887392.png",
-    "static/media/github-projects.png": "/Portfolio/static/media/github-projects.3c432b6ec987262152e1.png",
+    "main.js": "/Portfolio/static/js/main.e09fe3ad.js",
     "static/media/background-header.jpg": "/Portfolio/static/media/background-header.35708e91d89ba76f59f2.jpg",
-    "static/media/Andres-Choque-small.jpg": "/Portfolio/static/media/Andres-Choque-small.b2d0854b3b2756566ddc.jpg",
     "index.html": "/Portfolio/index.html",
     "main.45cda94d.css.map": "/Portfolio/static/css/main.45cda94d.css.map",
-    "main.179ae914.js.map": "/Portfolio/static/js/main.179ae914.js.map"
+    "main.e09fe3ad.js.map": "/Portfolio/static/js/main.e09fe3ad.js.map"
   },
   "entrypoints": [
     "static/css/main.45cda94d.css",
-    "static/js/main.179ae914.js"
+    "static/js/main.e09fe3ad.js"
   ]
 }
