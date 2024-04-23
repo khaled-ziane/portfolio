@@ -3,13 +3,7 @@ import "./Home.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../../Components/Navbar/Navbar";
-import AbtPic from "./Images/Andres-Choque-small.jpg";
-import workpic1 from "./Images/tactica.png";
-import workpic2 from "./Images/drontec.png";
-import workpic3 from "./Images/creotec.png";
-import workpic4 from "./Images/cfl.png";
-import workpic5 from "./Images/github-projects.png";
-import workpic6 from "./Images/andres-website.png";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -146,12 +140,12 @@ function Home() {
             <div className="abt-col-2">
               <h1 className="sub-header">Who am I</h1>
               <p>
-                I am a Software Engineer with a passion for technology,
-                business, travel, and leadership. My specialty is on the{" "}
-                <strong>Front-End</strong>. My professional experience building
-                scalable web applications included designing, developing,
-                implementing, maintaining applications and solutions using a
-                range of technologies and programming language.
+                I am a Software Engineer with a passion for technology. My
+                specialty is on the <strong>Front-End</strong>. My professional
+                experience building scalable web applications included
+                designing, developing, implementing, maintaining applications
+                and solutions using a range of technologies and programming
+                language.
               </p>
 
               <div className="tabs">
