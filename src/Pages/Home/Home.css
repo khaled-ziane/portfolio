@@ -297,7 +297,7 @@ strong {
 /**********Contact section**********/
 
 .contact-l {
-  flex-basis: 35%;
+  flex-basis: 50%;
 }
 
 .contact-r {
@@ -365,17 +365,12 @@ form .btncv {
 }
 /* ------------------------------- */
 .skills {
-  padding-top: 16px;
-  display: flex;
-  /* gap: 16px; */
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 16px;
 }
-.image-container {
-  /* width: 70px;
-  height: 70px; */
-}
+
 .image-container img {
   /* width: 100%;
   height: 100%;

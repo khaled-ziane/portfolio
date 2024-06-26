@@ -33,7 +33,7 @@ function Home() {
   const handleDownloadResume = async () => {
     try {
       // Fetch the resume file from the public folder
-      const response = await fetch("/Khaled_Ziane_CV.pdf");
+      const response = await fetch("/Khaled_CV.pdf");
       const blob = await response.blob();
 
       // Create a URL for the blob object
@@ -42,7 +42,7 @@ function Home() {
       // Create an anchor element with the URL and trigger download
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", "Khaled_Ziane_CV.pdf");
+      link.setAttribute("download", "Khaled_CV.pdf");
       document.body.appendChild(link);
       link.click();
 
@@ -183,30 +183,30 @@ function Home() {
               >
                 <ul>
                   <li>
-                    <span>Languages</span>
-                    <br />
-                    Arabic, French and English
-                  </li>
-                  <li>
                     <span>Front-End</span>
                     <br />
-                    HTML, CSS, SCSS, Javascript, Typescript ,React, Redux,
+                    HTML, CSS, SASS, Javascript, Typescript ,React, Redux,
                     Material UI
                   </li>
                   <li>
                     <span>Back-End</span>
                     <br />
-                    Node, Express, PHP, MongoDB, MySQL,
+                    Node JS, Express JS, PHP, MongoDB, MySQL, SQL
                   </li>
                   <li>
                     <span>Tools</span>
                     <br />
-                    Git, GitHub, Postman, Postman, Selenium
+                    Git, GitHub, Postman, Visual Studio Code
                   </li>
                   <li>
                     <span>Operating Systems</span>
                     <br />
                     Windows, Linux, Android
+                  </li>
+                  <li>
+                    <span>Languages</span>
+                    <br />
+                    Arabic, French and English
                   </li>
                 </ul>
               </div>
@@ -221,17 +221,23 @@ function Home() {
                   <li>
                     <span>July. 2021 &nbsp;-&nbsp; 2024</span>
                     <br />
-                    Freelance Web Developer
+                    Freelance Web Developer.
                   </li>
                   <li>
-                    <span>dec. 2023 &nbsp;-&nbsp;fev 2024 </span>
+                    <span>December 2021 &nbsp;-&nbsp; September 2023</span>
+                    <br />
+                    Technical Support Engineer at BM tech
+                  </li>
+                  {/* <li>
+                    <span>December. 2023 &nbsp;-&nbsp;February 2024 </span>
                     <br />
                     Web development Instructor
-                  </li>
+                  </li> */}
                   <li>
-                    <span>December 2021 &nbsp;-&nbsp; 2024</span>
+                    <span> September 2017 &nbsp;-&nbsp; December 2017</span>
                     <br />
-                    IT Support at BM tech
+                    Practical internship at ENIE - Enterprise National in
+                    Electronics
                   </li>
                 </ul>
               </div>
@@ -378,6 +384,12 @@ function Home() {
                 alt=""
               />
             </div>
+            {/* <div className="image-container">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png"
+                alt=""
+              />
+            </div> */}
           </div>
         </div>
       </div>
@@ -385,10 +397,9 @@ function Home() {
       <div className="portfolio-section" id="portfolio">
         <div className="container">
           <h1 className="sub-header">Projects</h1>
-
           <div className="work-list">
             <div className="work">
-              <img src="https://i.ibb.co/5MXsFV8/14.png" alt="navire" />
+              <img src="/img/14.png" alt="navire" />
               <div className="layer">
                 <h3>
                   <strong>Navire</strong>
@@ -396,7 +407,8 @@ function Home() {
                 <p>
                   The HR software solution offers a management system for
                   employees including managing their accounts, documents and
-                  reports
+                  reports.
+                  <br /> REACT JS, Node JS, MySql
                 </p>
                 <div
                   style={{
@@ -432,17 +444,14 @@ function Home() {
               </div>
             </div>
             <div className="work">
-              <img
-                src="https://i.ibb.co/tsPX0Sn/Capture.png"
-                alt="Tactica-ministries"
-              />
+              <img src="/img/drover.png" alt="Tactica-ministries" />
               <div className="layer">
                 <h3>
                   <strong>Drover Clone</strong>
                 </h3>
                 <p>
                   Web Application for hiring of automobiles (motor cars) for
-                  relatively short periods
+                  relatively short periods. <br /> REACT JS
                 </p>
                 <div
                   style={{
@@ -479,14 +488,14 @@ function Home() {
             </div>
 
             <div className="work">
-              <img src="https://i.ibb.co/fCt63jj/11.png" alt="Drontec" />
+              <img src="/img/11.png" alt="Drontec" />
               <div className="layer">
                 <h3>
                   <strong>BEATY</strong>
                 </h3>
                 <p>
-                  E-commerce web application have made it possible to purchase
-                  Cosmetic products
+                  E-commerce web application has made it possible to purchase
+                  Cosmetic products. <br /> HTML, CSS, JS, PHP, MySql
                 </p>
                 <div
                   style={{
@@ -509,6 +518,7 @@ function Home() {
                       Github
                     </div>
                   </a>
+
                   {/* <a
                     href="https://drive.google.com/drive/folders/1ze-jPOoSTODw32KMdzLU3mK6nTiXgHeQ"
                     target="_blank"
@@ -522,27 +532,45 @@ function Home() {
               </div>
             </div>
 
-            {/* <div className="work">
-              <img src={workpic3} alt="Creotec" />
+            <div className="work">
+              <img src="/img/moz.png" alt="Drontec" />
               <div className="layer">
                 <h3>
-                  <strong>CREOTEC</strong>
+                  <strong>Educal</strong>
                 </h3>
                 <p>
-                  CREOTEC allows customers to purchase prosthetics for the
-                  people in need.
+                  Web application for educational purposes. <br /> REACT JS
                 </p>
-                <a
-                  href="https://creo-tec.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Creotec-website-link"
+                <div
+                  style={{
+                    display: "flex",
+                    justifyItems: "center",
+                    gap: "16px",
+                  }}
                 >
-                  {" "}
-                  <FontAwesomeIcon icon={faLink} />
-                </a>
+                  <a
+                    href="https://github.com/khaled-ziane/educal"
+                    target="_blank"
+                    // rel="noreferrer noopener"
+                    // aria-label="Tactica-ministries-website-link"
+                  >
+                    <div>
+                      <FontAwesomeIcon
+                        icon="fa-brands fa-github"
+                        fontSize={20}
+                      />
+                      Github
+                    </div>
+                  </a>
+                  <a href="https://edutest2021.netlify.app/" target="_blank">
+                    <div>
+                      <FontAwesomeIcon icon={faLink} fontSize={20} />
+                      Demo
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div> */}
+            </div>
           </div>
 
           {/* {showMore && (
@@ -613,7 +641,7 @@ function Home() {
 
           <div className="button-container">
             {!showMore && (
-              <a href="https://github.com/samikoum" target="_blank">
+              <a href="https://github.com/khaled-ziane" target="_blank">
                 <button
                   className="btn"
                   id="view-more"
@@ -645,7 +673,7 @@ function Home() {
               <h1 className="sub-header">Let's Connect</h1>
               <p>
                 <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                khaledinfo2015@gmail.com
+                k.ziane2021@gmail.com
               </p>
               <p>
                 <FontAwesomeIcon icon={faPhone} /> 06 98 67 47 54
